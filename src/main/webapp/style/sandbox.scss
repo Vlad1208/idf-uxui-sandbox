@@ -2,6 +2,8 @@
 
 html,
 body,
+figure,
+img,
 div,
 p,
 span,
@@ -22,6 +24,26 @@ a {
     overflow: auto;	
     background: #DFE6EC;
 
+    .card-wrap {
+    	display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		border: 1px solid rgba(0,0,0,0.1);
+		border-radius: 4px;
+		padding: 20px;
+		box-sizing: border-box;
+		-webkit-transition: 0.2s all;
+	    -moz-transition: 0.2s all;
+	    -o-transition: 0.2s all;
+	    transition: 0.2s all;
+	    background: #fff;
+	    position: relative;
+
+	    &:hover {
+	    	box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+	    }
+    }
+
 	header {
 		&.form-field-wrapper {
 			display: flex;
@@ -30,25 +52,10 @@ a {
 			padding: 20px;
 			box-sizing: border-box;
 			position: relative;
+			margin: 0 0 10px;
 
 			.filter-toolbar {
-				display: flex;
-				width: 100%;
-				flex-wrap: wrap;
-				border: 1px solid rgba(0,0,0,0.1);
-				border-radius: 4px;
-				padding: 20px;
-				box-sizing: border-box;
-				-webkit-transition: 0.2s all;
-			    -moz-transition: 0.2s all;
-			    -o-transition: 0.2s all;
-			    transition: 0.2s all;
-			    background: #fff;
-			    position: relative;
-
 			    &:hover {
-			    	box-shadow: 0 3px 5px rgba(0,0,0,0.15);
-
 			    	.apply-filters {
 			    		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 			    	}
@@ -128,39 +135,43 @@ a {
 	}
 
 	section {
-		.controls {
-			padding: 0 20px;
-			box-sizing: border-box;
-		}
+		&.view-type-wrapper { 
+			padding: 20px;
 
-		.grid-view,
-		.table-view {
-
-			> div {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-evenly;
+			.controls {
+				box-sizing: border-box;
 			}
 
-			.cellListEvenItem,
-			.cellListOddItem {
-				border: 1px solid rgba(0,0,0,.1);
-				background: #fff;
-			    border-radius: 4px;
-			    padding: 20px;
-			    box-sizing: border-box;
-			    -webkit-transition: 0.2s all;
-			    -moz-transition: 0.2s all;
-			    -o-transition: 0.2s all;
-			    transition: 0.2s all;	
-			    flex-grow: 1;
-				max-width: 350px;
-				width: 100%;
-				margin: 15px 10px;
+			.grid-view,
+			.table-view {
 
-				&:hover {
-			    	box-shadow: 0 3px 5px rgba(0,0,0,0.15);
-			    }
+				> div {
+					display: flex;
+				    flex-wrap: wrap;
+				    justify-content: space-between;
+				    margin: 0 -10px;
+				}
+
+				.cellListEvenItem,
+				.cellListOddItem {
+					border: 1px solid rgba(0,0,0,.1);
+					background: #fff;
+				    border-radius: 4px;
+				    padding: 20px;
+				    box-sizing: border-box;
+				    -webkit-transition: 0.2s all;
+				    -moz-transition: 0.2s all;
+				    -o-transition: 0.2s all;
+				    transition: 0.2s all;	
+				    flex-grow: 1;
+					max-width: 345px;
+				    width: 100%;
+				    margin: 11px 10px;
+
+					&:hover {
+				    	box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+				    }
+				}
 			}
 		}
 	}

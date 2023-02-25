@@ -7,7 +7,7 @@
 	</ui:style>
 	<g:HTMLPanel styleName="person-view">
 		<header class="form-field-wrapper">
-			<div class="filter-toolbar">
+			<div class="filter-toolbar card-wrap">
 				<div class="form-field title">
 					<span class="label"><i class="fa-solid fa-user"></i> Title:</span>
 					<select class="value">
@@ -99,13 +99,15 @@
 				<button ui:field="apply" class="apply-filters"><i class="fa-solid fa-filter"></i> Apply Filters</button>
 			</div>
 		</header>
-		<section>
-			<header class="controls">
-				<button ui:field="toggle" class="toggle-view-mode">Switch View Mode</button>
-				<button ui:field="reset" class="reset">Reset Data Collection</button>
-			</header>
-			<dp:PersonCellList ui:field="personList"
-				styleName="grid-view"></dp:PersonCellList>
+		<section class="view-type-wrapper">
+			<div class="card-wrap">
+				<header class="controls">
+					<button ui:field="toggle" class="toggle-view-mode">Switch View Mode</button>
+					<button ui:field="reset" class="reset">Reset Data Collection</button>
+				</header>
+				<dp:PersonCellList ui:field="personList"
+					styleName="grid-view"></dp:PersonCellList>
+			</div>
 		</section>
 		<footer>
 			<button ui:field="fetch" class="fetch">Fetch more...</button>
