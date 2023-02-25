@@ -67,7 +67,7 @@
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field linkedin-skill">
-					<span class="label"><i class="fa-brands fa-linkedin"></i> LinkedinIn Skill:</span>
+					<span class="label"><i class="fa-brands fa-linkedin"></i> LinkedIn Skill:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field company">
@@ -96,8 +96,8 @@
 					</div>
 				</div>	
 
+				<button ui:field="apply" class="apply-filters"><i class="fa-solid fa-filter"></i> Apply Filters</button>
 			</div>
-			<button ui:field="apply" class="apply-filters">Apply Filters</button>
 		</header>
 		<section>
 			<header class="controls">
