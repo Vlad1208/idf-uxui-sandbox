@@ -12,6 +12,12 @@ a {
 	font-size: 100%;
 }
 
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
 .person-view {
     overflow: auto;	
 
@@ -40,11 +46,31 @@ a {
 			    	box-shadow: 0 3px 5px rgba(0,0,0,0.15);
 			    }
 			}
+
+			.start-end-date {
+				display: flex;
+				width: 100%;
+				text-align: center;
+				justify-content: center;
+
+				div {
+					margin: 0 10px;
+					
+					label {
+						display: block;
+						font-size: 12px;
+						font-weight: 600;
+						text-align: left;
+					}
+				}
+			}
 		}
 
 		span {
 			&.label {
 				display: block;
+				font-size: 12px;
+				font-weight: 600;
 			}
 		}
 
@@ -55,6 +81,11 @@ a {
 	}
 
 	section {
+		.controls {
+			padding: 0 20px;
+			box-sizing: border-box;
+		}
+
 		.grid-view,
 		.table-view {
 
@@ -73,7 +104,7 @@ a {
 			    -webkit-transition: 0.2s all;
 			    -moz-transition: 0.2s all;
 			    -o-transition: 0.2s all;
-			    transition: 0.2s all;
+			    transition: 0.2s all;	
 			    flex-grow: 1;
 				max-width: 350px;
 				width: 100%;

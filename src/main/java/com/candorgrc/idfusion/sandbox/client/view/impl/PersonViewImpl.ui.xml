@@ -9,7 +9,7 @@
 		<header class="form-field-wrapper">
 			<div class="filter-toolbar">
 				<div class="form-field title">
-					<span class="label">Title:</span>
+					<span class="label"><i class="fa-solid fa-user"></i> Title:</span>
 					<select class="value">
 						<option value=""></option>
 						<option value="Mr.">Mr.</option>
@@ -18,15 +18,15 @@
 					</select>
 				</div>
 				<div class="form-field first-name">
-					<span class="label">First Name:</span>
+					<span class="label"><i class="fa-solid fa-signature"></i> First Name:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field last-name">
-					<span class="label">Last Name:</span>
+					<span class="label"><i class="fa-solid fa-signature"></i> Last Name:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field suffix">
-					<span class="label">Suffix:</span>
+					<span class="label"><i class="fa-solid fa-graduation-cap"></i> Suffix:</span>
 					<select class="value">
 						<option value=""></option>
 						<option value="PhD">PhD.</option>
@@ -35,7 +35,7 @@
 					</select>
 				</div>
 				<div class="form-field gender">
-					<span class="label">Gender:</span>
+					<span class="label"><i class="fa-solid fa-venus-mars"></i> Gender:</span>
 					<select class="value">
 						<option value=""></option>
 						<option value="m">Male</option>
@@ -43,54 +43,54 @@
 					</select>
 				</div>
 				<div class="form-field race">
-					<span class="label">Race:</span>
+					<span class="label"><i class="fa-solid fa-image-portrait"></i> Race:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field language">
-					<span class="label">Language:</span>
+					<span class="label"><i class="fa-solid fa-language"></i> Language:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field university">
-					<span class="label">University:</span>
+					<span class="label"><i class="fa-solid fa-building-columns"></i> University:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field buzzword">
-					<span class="label">Buzzword:</span>
+					<span class="label"><i class="fa-solid fa-pen-to-square"></i> Buzzword:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field email">
-					<span class="label">E-Mail:</span>
+					<span class="label"><i class="fa-solid fa-square-envelope"></i> E-Mail:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field job-title">
-					<span class="label">Job Title:</span>
+					<span class="label"><i class="fa-solid fa-chalkboard"></i> Job Title:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field linkedin-skill">
-					<span class="label">LinkedinIn Skill:</span>
+					<span class="label"><i class="fa-brands fa-linkedin"></i> LinkedinIn Skill:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field company">
-					<span class="label">Company:</span>
+					<span class="label"><i class="fa-solid fa-building"></i> Company:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field dept">
-					<span class="label">Department:</span>
+					<span class="label"><i class="fa-solid fa-building-user"></i> Department:</span>
 					<input type="text" class="value" />
 				</div>
 				<div class="form-field ein">
-					<span class="label">Employer Identification Number:</span>
+					<span class="label"><i class="fa-solid fa-id-card"></i> Employer Identification Number:</span>
 					<input type="text" class="value" />
 				</div>
 
-				<div class="form-row">
+				<div class="form-row start-end-date">
 					<div>
-						<label for="start">Start</label>
+						<label for="start"><i class="fa-regular fa-calendar"></i> Start</label>
 						<input type="date" id="start" value="2018-09-29"
 							min="2018-01-01" max="2018-12-31" />
 					</div>
 					<div>
-						<label for="end">End</label>
+						<label for="end"><i class="fa-regular fa-calendar"></i> End</label>
 						<input type="date" id="end" value="2018-10-29"
 							min="2018-01-01" max="2018-12-31" />
 					</div>
