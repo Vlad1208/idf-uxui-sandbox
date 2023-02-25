@@ -1,2 +1,88 @@
 /** @designer: add sass/scss rules here. Upon run-devmode they will be transpiled to css and automatically loaded into the application */
 
+html,
+body,
+div,
+p,
+span,
+a {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 100%;
+}
+
+.person-view {
+    overflow: auto;	
+
+	header {
+		&.form-field-wrapper {
+			display: flex;
+			width: 100%;
+			flex-wrap: wrap;
+			padding: 20px;
+			box-sizing: border-box;
+
+			.filter-toolbar {
+				display: flex;
+				width: 100%;
+				flex-wrap: wrap;
+				border: 1px solid rgba(0,0,0,0.1);
+				border-radius: 4px;
+				padding: 20px;
+				box-sizing: border-box;
+				-webkit-transition: 0.2s all;
+			    -moz-transition: 0.2s all;
+			    -o-transition: 0.2s all;
+			    transition: 0.2s all;
+
+			    &:hover {
+			    	box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+			    }
+			}
+		}
+
+		span {
+			&.label {
+				display: block;
+			}
+		}
+
+		.form-field {
+			margin: 10px;
+		}
+
+	}
+
+	section {
+		.grid-view,
+		.table-view {
+
+			> div {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+			}
+
+			.cellListEvenItem,
+			.cellListOddItem {
+				border: 1px solid rgba(0,0,0,.1);
+			    border-radius: 4px;
+			    padding: 20px;
+			    box-sizing: border-box;
+			    -webkit-transition: 0.2s all;
+			    -moz-transition: 0.2s all;
+			    -o-transition: 0.2s all;
+			    transition: 0.2s all;
+			    flex-grow: 1;
+				max-width: 350px;
+				width: 100%;
+				margin: 15px 10px;
+
+				&:hover {
+			    	box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+			    }
+			}
+		}
+	}
+}

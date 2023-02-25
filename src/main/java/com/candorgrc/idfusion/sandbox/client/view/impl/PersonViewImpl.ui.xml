@@ -6,9 +6,9 @@
 	
 	</ui:style>
 	<g:HTMLPanel styleName="person-view">
-		<header>
+		<header class="form-field-wrapper">
 			<div class="filter-toolbar">
-				<div class="title">
+				<div class="form-field title">
 					<span class="label">Title:</span>
 					<select class="value">
 						<option value=""></option>
@@ -17,15 +17,15 @@
 						<option value="Ms.">Ms.</option>
 					</select>
 				</div>
-				<div class="first-name">
+				<div class="form-field first-name">
 					<span class="label">First Name:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="last-name">
+				<div class="form-field last-name">
 					<span class="label">Last Name:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="suffix">
+				<div class="form-field suffix">
 					<span class="label">Suffix:</span>
 					<select class="value">
 						<option value=""></option>
@@ -34,7 +34,7 @@
 						<option value="Doctor">Doctor</option>
 					</select>
 				</div>
-				<div class="gender">
+				<div class="form-field gender">
 					<span class="label">Gender:</span>
 					<select class="value">
 						<option value=""></option>
@@ -42,58 +42,59 @@
 						<option value="f">Female</option>
 					</select>
 				</div>
-				<div class="race">
+				<div class="form-field race">
 					<span class="label">Race:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="language">
+				<div class="form-field language">
 					<span class="label">Language:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="university">
+				<div class="form-field university">
 					<span class="label">University:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="buzzword">
+				<div class="form-field buzzword">
 					<span class="label">Buzzword:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="email">
+				<div class="form-field email">
 					<span class="label">E-Mail:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="job-title">
+				<div class="form-field job-title">
 					<span class="label">Job Title:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="linkedin-skill">
+				<div class="form-field linkedin-skill">
 					<span class="label">LinkedinIn Skill:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="company">
+				<div class="form-field company">
 					<span class="label">Company:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="dept">
+				<div class="form-field dept">
 					<span class="label">Department:</span>
 					<input type="text" class="value" />
 				</div>
-				<div class="ein">
+				<div class="form-field ein">
 					<span class="label">Employer Identification Number:</span>
 					<input type="text" class="value" />
 				</div>
 
-
-				<div>
-					<label for="start">Start</label>
-					<input type="date" id="start" value="2018-09-29"
-						min="2018-01-01" max="2018-12-31" />
-				</div>
-				<div>
-					<label for="end">End</label>
-					<input type="date" id="end" value="2018-10-29"
-						min="2018-01-01" max="2018-12-31" />
-				</div>
+				<div class="form-row">
+					<div>
+						<label for="start">Start</label>
+						<input type="date" id="start" value="2018-09-29"
+							min="2018-01-01" max="2018-12-31" />
+					</div>
+					<div>
+						<label for="end">End</label>
+						<input type="date" id="end" value="2018-10-29"
+							min="2018-01-01" max="2018-12-31" />
+					</div>
+				</div>	
 
 			</div>
 			<button ui:field="apply" class="apply-filters">Apply Filters</button>
