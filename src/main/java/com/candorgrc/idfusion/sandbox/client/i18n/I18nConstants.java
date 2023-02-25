@@ -2,7 +2,7 @@ package com.candorgrc.idfusion.sandbox.client.i18n;
 
 /**
  * Interface to represent the constants contained in resource bundle:
- * 	'/home/bpetridean/workspace/idf-uxui-sandbox/src/main/resources/com/candorgrc/idfusion/sandbox/client/i18n/I18nConstants.properties'.
+ * 	'D:/projects/VeracityID/CodeForkTest/idf-uxui-sandbox/src/main/resources/com/candorgrc/idfusion/sandbox/client/i18n/I18nConstants.properties'.
  */
 public interface I18nConstants extends com.google.gwt.i18n.client.Constants {
   
