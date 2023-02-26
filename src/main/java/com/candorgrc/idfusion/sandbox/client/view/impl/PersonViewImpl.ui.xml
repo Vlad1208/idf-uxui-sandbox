@@ -102,8 +102,8 @@
 		<section class="view-type-wrapper">
 			<div class="card-wrap">
 				<header class="controls">
-					<button ui:field="toggle" class="toggle-view-mode">Switch View Mode</button>
-					<button ui:field="reset" class="reset">Reset Data Collection</button>
+					<button ui:field="toggle" class="toggle-view-mode"><i class="fa-solid fa-table-cells-large"></i> Switch View Mode</button>
+					<button ui:field="reset" class="reset"><i class="fa-solid fa-rotate"></i> Reset Data Collection</button>
 				</header>
 				<dp:PersonCellList ui:field="personList"
 					styleName="grid-view"></dp:PersonCellList>
