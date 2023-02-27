@@ -123,25 +123,22 @@ public class PersonCell extends AbstractCell<PersonJso> {
 					+ "</header>"
 					+ "<section>"
 						+ "<div class='section-inner-wrap'>"
-							+ "<div class='personal-info'>"
+							
 								+ "<i class='{4}' title='{4}'></i>"
 								+ "<div class='race' title='Race'><i class='fa-solid fa-image-portrait'></i> {5}</div>"
 								+ "<div class='language' title='Language'><i class='fa-solid fa-language'></i> {6}</div>"
-							+ "</div>"
-							+ "<div class='education'>"
+							
 								+ "<div class='university' title='University'><i class='fa-solid fa-building-columns'></i> {7}</div>"
-							+ "</div>"
-							+ "<div class='work'>"
+							
 								+ "<div class='job-title' title='Job Title'><i class='fa-solid fa-chalkboard'></i> {10}</div>"
-								+ "<div class='company' title='Company'><i class='fa-solid fa-chalkboard'></i> {13}</div>"
+								+ "<div class='company' title='Company'><i class='fa-solid fa-building'></i> {13}</div>"
 								+ "<div class='department' title='Department'><i class='fa-solid fa-building-user'></i> {14}</div>"
 								+ "<div class='ein' title='Employer Identification Number'><i class='fa-solid fa-id-card'></i> {15}</div>"
 								+ "<div class='email' title='E-Mail'><i class='fa-solid fa-square-envelope'></i> {9}</div>"
-							+ "</div>"
-							+ "<aside>"
+							
 								+ "<div class='linkedin-skill' title='LinkedIn Skill'><i class='fa-brands fa-linkedin'></i> {11}</div>"
 								+ "<div class='buzzword' title='Buzzword'><i class='fa-solid fa-pen-to-square'></i> {8}</div>"
-							+ "</aside>"
+							
 						+ "</div>"
 					+ "</section>"
 					+ "<footer>"

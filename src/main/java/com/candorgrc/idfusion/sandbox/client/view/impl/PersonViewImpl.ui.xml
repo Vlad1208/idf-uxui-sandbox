@@ -83,7 +83,7 @@
 					<input type="text" class="value" />
 				</div>
 
-				<div class="form-row start-end-date">
+				<div class="form-field start-end-date">
 					<div>
 						<label for="start"><i class="fa-regular fa-calendar"></i> Start</label>
 						<input type="date" id="start" value="2018-09-29"
@@ -96,6 +96,19 @@
 					</div>
 				</div>	
 
+				<!-- <div class="form-row start-end-date">
+					<div>
+						<label for="start"><i class="fa-regular fa-calendar"></i> Start</label>
+						<input type="date" id="start" value="2018-09-29"
+							min="2018-01-01" max="2018-12-31" />
+					</div>
+					<div>
+						<label for="end"><i class="fa-regular fa-calendar"></i> End</label>
+						<input type="date" id="end" value="2018-10-29"
+							min="2018-01-01" max="2018-12-31" />
+					</div>
+				</div>	 -->
+
 				<button ui:field="apply" class="apply-filters"><i class="fa-solid fa-filter"></i> Apply Filters</button>
 			</div>
 		</header>
@@ -107,10 +120,12 @@
 				</header>
 				<dp:PersonCellList ui:field="personList"
 					styleName="grid-view"></dp:PersonCellList>
+
+				<button ui:field="fetch" class="fetch">Fetch more...</button>	
 			</div>
 		</section>
-		<footer>
-			<button ui:field="fetch" class="fetch">Fetch more...</button>
-		</footer>
+		<!-- <footer>
+			
+		</footer> -->
 	</g:HTMLPanel>
 </ui:UiBinder> 
